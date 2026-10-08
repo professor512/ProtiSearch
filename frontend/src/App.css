@@ -1,0 +1,174 @@
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 42px;
+}
+
+.header p {
+  margin-top: 10px;
+  color: #6b7280;
+}
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-container {
+  display: flex;
+  gap: 10px;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.search-container select {
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  font-size: 16px;
+}
+
+.search-container button {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-container button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.results {
+  margin-top: 30px;
+}
+
+.protein-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.protein-card h2 {
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+.protein-card p {
+  margin: 6px 0;
+  color: #4b5563;
+}
+
+.rank {
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.protein-card {
+  cursor: pointer;
+  transition: transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.protein-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.view-details {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.protein-details {
+  margin-top: 30px;
+  padding: 25px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.protein-details h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.protein-details p {
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.no-results {
+  margin-top: 30px;
+  padding: 30px;
+  text-align: center;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.no-results h2 {
+  margin-top: 0;
+}
+
+.no-results p {
+  color: #6b7280;
+}
+
+.pdb-section {
+  margin-top: 25px;
+}
+
+.pdb-section h3 {
+  margin-bottom: 12px;
+}
+
+.pdb-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pdb-button {
+  padding: 8px 14px;
+  border: 1px solid #2563eb;
+  border-radius: 6px;
+  background: white;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pdb-button:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.pdb-button.selected {
+  background: #2563eb;
+  color: white;
+}
