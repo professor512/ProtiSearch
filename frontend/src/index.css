@@ -1,9 +1,55 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+*, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg:              #f8f9fc;
+  --color-surface:         #ffffff;
+  --color-surface-subtle:  #f3f5fa;
+  --color-border:          #e4e7ef;
+  --color-border-hover:    #c7cedd;
+
+  --color-text-primary:    #111827;
+  --color-text-secondary:  #4b5563;
+  --color-text-muted:      #9ca3af;
+
+  --color-accent:          #3b5bdb;
+  --color-accent-light:    #eef2ff;
+  --color-accent-hover:    #3451c7;
+
+  --color-rank:            #6366f1;
+  --color-tag-bg:          #f1f5f9;
+  --color-tag-text:        #475569;
+
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   14px;
+
+  --shadow-xs:  0 1px 2px rgba(0,0,0,.05);
+  --shadow-sm:  0 2px 8px rgba(0,0,0,.07);
+  --shadow-md:  0 4px 20px rgba(0,0,0,.09);
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+html {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  color: var(--color-text-primary);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  margin: 0;
-  background: #f5f7fb;
-  color: #1f2937;
+  min-height: 100vh;
 }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
